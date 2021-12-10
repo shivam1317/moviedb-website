@@ -1,0 +1,21 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css"
+  integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="style.css" />
+<div class="navContainer">
+  <h1>All movies database</h1>
+  <form action="/search" method="post" class="searchDiv">
+    <select name="category" class="cateogry">
+      <option value="movie">Movie title</option>
+      <option value="person">Author</option>
+    </select>
+    <div class="searchbar">
+      <input type="text" placeholder="Search.." name="searchTerm" />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+  </form>
+</div>

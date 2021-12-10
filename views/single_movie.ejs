@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="../single.css" />
+<div class="container">
+  <div class="movieInfo">
+    <h1>All movies database</h1>
+    <hr />
+    <div class="imageAndInfo">
+      <img
+        src="<%= imageBaseUrl + parsed.poster_path%>"
+        alt="Image not Found 😥"
+      />
+      <div class="overview">
+        <h2><%= parsed.original_title%></h2>
+        <p><%= parsed.overview%></p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="goto">
+      <a href="/home">Home</a>
+      <a href="<%= parsed.homepage%>" target="_blank">Goto main page</a>
+      <a href="https://imdb.com/title/<%=parsed.imdb_id%>" target="_blank"
+        >IMDB link
+      </a>
+    </div>
+    <div class="infoDiv">
+      <div class="otherInfo">
+        <p>Budget : $<%= parsed.budget%></p>
+        <p>Total revenue : $<%= parsed.revenue%></p>
+        <p>Release date : <%= parsed.release_date%></p>
+        <p>Production companies:</p>
+        <div class="companies">
+          <% parsed.production_companies.forEach((company)=>{%>
+          <p><%= company.name%></p>
+          <%})%>
+        </div>
+      </div>
+      <img src="../preview.jpg" alt="Icon" />
+    </div>
+  </div>
+</div>

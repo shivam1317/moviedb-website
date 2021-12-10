@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="style.css" />
+<div class="container">
+  <%- include('Navbar')-%>
+  <div class="mainDiv">
+    <% parsedData.forEach((movie)=>{%>
+    <div class="movieDiv">
+      <p class="movieTitle"><%= movie.title %></p>
+      <a href="/movie/<%= movie.id %>"
+        ><img
+          src="<%= imageBaseUrl + movie.poster_path%>"
+          alt="Image not found 😥"
+      /></a>
+    </div>
+    <%})%>
+  </div>
+</div>
