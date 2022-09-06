@@ -1,0 +1,4 @@
+--> For database connection you can use "pg" module 
+and then do like this : 
+
+const PoolClass = require("pg").Pool;
