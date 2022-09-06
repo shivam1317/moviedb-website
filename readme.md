@@ -16,7 +16,7 @@ MovieDB allows you to search from various movies across the world and see descri
 
 3. Search by actor/author name:
 
-![](https://i.imgur.com/DhlYCj8.gif)
+![Alt text](https://i.imgur.com/DhlYCj8.gif)
 
 4. Get direct links to imdb or original website:
 
